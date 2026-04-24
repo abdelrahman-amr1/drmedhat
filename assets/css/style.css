@@ -198,8 +198,9 @@ ul {
 
 .image-wrapper {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -548,23 +549,41 @@ footer {
 
     .hero {
         padding-top: 120px;
+        padding-bottom: 50px;
     }
 
     .about-text,
     .contact-info {
-        text-align: right;
+        text-align: center;
     }
 
     .nav-links {
         display: none;
-        /* In a real app we'd add a mobile menu toggle here */
+    }
+
+    .about-stats {
+        margin-top: 40px;
     }
 }
 
 @media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .image-wrapper {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
     .marquee-content img {
-        width: 300px;
-        height: 200px;
+        width: 280px;
+        height: 180px;
+        margin: 0 10px;
     }
 
     @keyframes scrollRtoL {
@@ -573,7 +592,51 @@ footer {
         }
 
         100% {
-            transform: translateX(calc(330px * 5));
+            transform: translateX(calc(300px * 10));
         }
+    }
+
+    .contact-form-wrapper {
+        padding: 30px 20px;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .courses {
+        padding: 60px 0;
+    }
+
+    .about,
+    .contact,
+    .gallery {
+        padding: 60px 0;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        width: 100%;
+    }
+
+    .stat-box {
+        padding: 20px 10px;
+    }
+
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+
+    .detail-item {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 }
