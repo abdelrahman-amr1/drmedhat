@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Target Phone Number
-const WHATSAPP_NUMBER = "201110487889";
+const WHATSAPP_NUMBER = "201224221165";
 
 // Function for course cards
 function bookCourse(courseName) {
