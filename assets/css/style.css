@@ -17,12 +17,14 @@
     --transition: all 0.3s ease-in-out;
 }
 
+html,
 body {
     font-family: 'Tajawal', sans-serif;
     background-color: var(--light-bg);
     color: var(--text-dark);
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
 }
 
 .container {
