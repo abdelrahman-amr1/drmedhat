@@ -328,7 +328,7 @@ ul {
     }
 
     100% {
-        transform: translateX(calc(480px * 11));
+        transform: translateX(calc(480px * 10));
     }
 }
 
